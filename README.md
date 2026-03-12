@@ -15,6 +15,7 @@ Aprender desarrollo web profesional construyendo un proyecto real.
 
 ## Estado actual
 
-🚧 En desarrollo - Fase 0: Fundamentos
+En desarrollo - Fase 0: Fundamentos
 
-Esto es para probar el git 
+## Git branches:
+Esto es información para hacerme poco a poco con las ramas y su manejo. He hecho cambios que pueden entrar en conflicto para entender la interacción
