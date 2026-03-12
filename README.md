@@ -17,5 +17,5 @@ Aprender desarrollo web profesional construyendo un proyecto real.
 
 En desarrollo - Fase 0: Fundamentos
 
-## Git branches:
+## Git branches - Vamos a entrar en conflicto:
 Esto es información para hacerme poco a poco con las ramas y su manejo. He hecho cambios que pueden entrar en conflicto para entender la interacción
