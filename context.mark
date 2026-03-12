@@ -1,0 +1,146 @@
+# Proyecto Web Informativa de Psicología — Roadmap de Aprendizaje
+
+## Objetivo
+Aprender desarrollo web desde cero construyendo una web real informativa sobre psicología, aplicando buenas prácticas profesionales, diseño moderno, seguridad, testing y despliegue.
+
+---
+
+# 🔹 FASE 0 — Fundamentos (Mentalidad + Bases)
+- [ ] Entender cómo funciona la web (cliente/servidor)
+- [ ] Qué es el frontend y el backend
+- [ ] Qué es una base de datos
+- [ ] Cómo funciona internet (dominio, hosting, navegador)
+- [ ] Manejo de la terminal y de comandos de ejecución del proyecto
+- [ ] Buenas prácticas
+- [ ] Cómo es la arquitectura de una web y la disposición de carpetas (donde va cada código)
+- [ ] Instalar herramientas necesarias:
+  - [ ] VS Code
+  - [ ] Node.js
+  - [ ] Git
+  - [ ] Cuenta en GitHub (conectar)
+
+---
+
+# FASE 1 — Primeros Pasos en Programación Web
+## HTML (estructura)
+- [ ] Entender etiquetas básicas
+- [ ] Crear primera página HTML
+- [ ] Estructurar texto e imágenes
+- [ ] Crear varias páginas y enlazarlas
+
+## CSS (diseño)
+- [ ] Entender cómo funciona CSS
+- [ ] Colores, textos y fondos
+- [ ] Espaciado y cajas
+- [ ] Flexbox (alinear elementos)
+- [ ] Hacer diseño responsive 
+
+---
+
+# FASE 2 — Diseño Web Moderno
+- [ ] Principios básicos de UI/UX
+- [ ] Paletas de colores modernas
+- [ ] Tipografías profesionales
+- [ ] Uso de iconos
+- [ ] Inspirarse en diseños reales
+- [ ] Usar librerías de estilos modernas:
+  - [ ] Tailwind CSS
+
+---
+
+# FASE 3 — JavaScript (Interactividad)
+- [ ] Variables y tipos de datos
+- [ ] Funciones
+- [ ] Eventos (clicks, formularios)
+- [ ] Manipular el DOM
+- [ ] Validar formularios
+- [ ] Mostrar/ocultar elementos dinámicamente
+
+---
+
+# FASE 4 — React (Frontend Profesional)
+- [ ] Qué es React y por qué se usa
+- [ ] Crear proyecto con Vite
+- [ ] Componentes
+- [ ] Props
+- [ ] Estados
+- [ ] Hooks básicos
+- [ ] Formularios en React
+- [ ] Rutas (React Router)
+
+---
+
+# FASE 5 — Backend Básico
+- [ ] Qué es una API
+- [ ] Crear servidor con Node.js
+- [ ] Framework Express
+- [ ] Crear rutas
+- [ ] Recibir datos de formularios
+- [ ] Conectar frontend con backend
+
+---
+
+# FASE 6 — Base de Datos
+- [ ] Qué es SQL vs NoSQL
+- [ ] Usar base de datos moderna:
+  - [ ] PostgreSQL o MongoDB
+- [ ] Guardar datos de usuarios
+- [ ] Leer datos desde el backend
+
+---
+
+# FASE 7 — Seguridad Básica
+- [ ] Validar datos del usuario
+- [ ] Evitar inyecciones
+- [ ] Manejo de contraseñas
+- [ ] Variables de entorno
+- [ ] CORS
+- [ ] Buenas prácticas generales
+
+---
+
+# FASE 8 — Testing
+- [ ] Qué es testing y por qué importa
+- [ ] Tests básicos del backend
+- [ ] Tests de componentes frontend
+- [ ] Probar formularios
+
+---
+
+# FASE 9 — Despliegue Profesional
+- [ ] Subir proyecto a GitHub
+- [ ] Desplegar frontend en Vercel
+- [ ] Desplegar backend
+- [ ] Conectar base de datos en la nube
+- [ ] Dominio personalizado (opcional)
+
+---
+
+# 🔹 FASE 10 — Proyecto Final
+Construir web de psicología con:
+
+- [ ] Página principal atractiva 
+- [ ] Sección de acerca de
+- [ ] Sección de la clínica
+- [ ] Sección de cursos
+- [ ] Sección de investigación
+- [ ] Sección de congreso
+- [ ] Sección de contacto
+- [ ] Botones de redes sociales
+- [ ] Formulario de contacto
+- [ ] Panel admin simple para que un super usuario modifique lo que quiera de forma sencilla
+- [ ] Base de datos conectada
+- [ ] Diseño profesional moderno
+- [ ] Web pública funcionando
+
+---
+
+# DIARIO DE APRENDIZAJE
+- [ ] Documentar qué aprendo cada día
+- [ ] Anotar errores y soluciones
+- [ ] Mejoras futuras del proyecto
+
+---
+
+# META FINAL
+Ser capaz de crear paso a paso y desplegar una web moderna desde cero entendiendo cada parte del proceso.
