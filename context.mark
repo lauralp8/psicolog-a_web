@@ -5,19 +5,19 @@ Aprender desarrollo web desde cero construyendo una web real informativa sobre p
 
 ---
 
-# 🔹 FASE 0 — Fundamentos (Mentalidad + Bases)
-- [ ] Entender cómo funciona la web (cliente/servidor)
-- [ ] Qué es el frontend y el backend
-- [ ] Qué es una base de datos
-- [ ] Cómo funciona internet (dominio, hosting, navegador)
-- [ ] Manejo de la terminal y de comandos de ejecución del proyecto
-- [ ] Buenas prácticas
-- [ ] Cómo es la arquitectura de una web y la disposición de carpetas (donde va cada código)
-- [ ] Instalar herramientas necesarias:
-  - [ ] VS Code
-  - [ ] Node.js
-  - [ ] Git
-  - [ ] Cuenta en GitHub (conectar)
+# 🔹 FASE 0 — Fundamentos (Mentalidad + Bases) ✅
+- [x] Entender cómo funciona la web (cliente/servidor)
+- [x] Qué es el frontend y el backend
+- [x] Qué es una base de datos
+- [x] Cómo funciona internet (dominio, hosting, navegador)
+- [x] Manejo de la terminal y de comandos de ejecución del proyecto
+- [x] Buenas prácticas
+- [x] Cómo es la arquitectura de una web y la disposición de carpetas (donde va cada código)
+- [x] Instalar herramientas necesarias:
+  - [x] VS Code
+  - [x] Node.js
+  - [x] Git
+  - [x] Cuenta en GitHub (conectar)
 
 ---
 
