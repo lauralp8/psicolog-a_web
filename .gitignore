@@ -1,0 +1,20 @@
+# Dependencias 
+node_modules/
+package-lock.json
+
+# Variables de entorno (secrets)
+.env
+.env.local
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de build
+dist/
+build/
+.next/
+
+# Logs
+*.log
+npm-debug.log*
