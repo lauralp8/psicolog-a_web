@@ -21,44 +21,39 @@ Aprender desarrollo web desde cero construyendo una web real informativa sobre p
 
 ---
 
-# FASE 1 — Primeros Pasos en Programación Web (EN PROGRESO)
+# FASE 1 — Primeros Pasos en Programación Web ✅ COMPLETADA
 ## HTML (estructura)
 - [x] Entender etiquetas básicas
 - [x] Crear primera página HTML con estructura semántica
 - [x] Estructurar texto e imágenes
-- [ ] Crear varias páginas y enlazarlas (EN PROGRESO)
+- [x] Crear varias páginas y enlazarlas
 
-**Estructura actual del proyecto:**
+**Estructura final del proyecto:**
 ```
 frontend/
 ├── index.html (✅ Página principal - Centro Bertrand Russell)
 └── pages/
-    ├── acerca-de.html (✅ Creado - contiene servicios de terapia)
-    ├── clinica.html (⚠️ Creado pero vacío)
-    ├── cursos.html (⚠️ Creado pero vacío)
-    ├── investigación.html (⚠️ Creado pero vacío)
-    ├── congreso.html (⚠️ Creado pero vacío)
-    ├── contacto.html (⚠️ Creado pero vacío - necesita formulario)
-    ├── tcc-trastornos-ansiedad.html (⚠️ Creado pero vacío)
-    └── blog.html (⚠️ Creado pero vacío)
+    ├── acerca-de.html (✅ Servicios de terapia)
+    ├── clinica.html (✅ Historia, equipo e instalaciones)
+    ├── cursos.html (✅ Formación TCC, mindfulness, talleres)
+    ├── investigación.html (✅ Líneas de investigación y publicaciones)
+    ├── congreso.html (✅ Congreso anual 2026)
+    ├── contacto.html (✅ Formulario funcional con validación)
+    ├── tcc-trastornos-ansiedad.html (✅ Información sobre TCC)
+    └── blog.html (✅ 3 artículos de ejemplo)
 ```
 
 **Navbar implementado con 8 secciones:**
-- Acerca de Nosotros, La Clínica, Cursos, Investigación, Congreso, Contacto, TCC Trastornos Ansiedad, Blog
+- Inicio, Acerca de, La Clínica, Cursos, Investigación, Congreso, Contacto, TCC, Blog
 
 **Conceptos HTML dominados:**
 - Estructura semántica: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
 - Diferencia entre `<section>` (temática) y `<article>` (independiente)
 - Jerarquía de encabezados (H1-H6)
 - Listas: `<ul>` (sin orden) y `<ol>` (ordenadas)
-- Enlaces: `<a href="">` con rutas relativas
+- Enlaces: `<a href="">` con rutas relativas (`../` para subir nivel)
+- Formularios: `<form>`, `<input>`, `<select>`, `<textarea>`, validación con `required`
 - Navegación multi-página (MPA)
-
-**PENDIENTE:**
-- [ ] Completar contenido de todas las páginas vacías
-- [ ] Añadir formulario en contacto.html
-- [ ] Probar navegación completa
-- [ ] Hacer commit y push del progreso
 
 ## CSS (diseño)
 - [ ] Entender cómo funciona CSS
