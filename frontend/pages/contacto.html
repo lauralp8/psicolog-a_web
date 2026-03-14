@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Centro Bertrand Russell</title>
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Acerca de Nosotros</a></li>
+                <li><a href="pages/clinica.html">La Clínica</a></li>
+                <li><a href="pages/cursos.html">Cursos</a></li>
+                <li><a href="pages/investigación.html">Investigación</a></li>
+                <li><a href="pages/congreso.html">Congreso</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/tcc-trastornos-ansiedad.html">TCC Trastornos Ansiedad</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <section>
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Calle Ejemplo, 123, Madrid</p>
+            <p><strong>Teléfono:</strong> <a href="tel:+34615171363">+34 615 17 13 63</a></p>
+            <p><strong>Email:</strong><a href="mailto:lauralasso@gmail.com"></a>lauralassoporto@gmail.com</p>
+        </section>
+
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="telefono">Teléfono de Contacto</label>
+                <input type="tel" name="telefono" id="telefono">
+
+                <label for="asunto">Asunto:</label>
+                <select name="asunto" id="asunto">
+                    <option value="consulta">Consulta General</option>
+                    <option value="cita">Solicitar Cita</option>
+                    <option value="cursos">Información sobre Cursos</option>
+                    <option value="otro">Otro Asunto</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Psicología Profesional. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

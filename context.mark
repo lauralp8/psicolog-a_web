@@ -21,12 +21,44 @@ Aprender desarrollo web desde cero construyendo una web real informativa sobre p
 
 ---
 
-# FASE 1 — Primeros Pasos en Programación Web
+# FASE 1 — Primeros Pasos en Programación Web (EN PROGRESO)
 ## HTML (estructura)
-- [ ] Entender etiquetas básicas
-- [ ] Crear primera página HTML
-- [ ] Estructurar texto e imágenes
-- [ ] Crear varias páginas y enlazarlas
+- [x] Entender etiquetas básicas
+- [x] Crear primera página HTML con estructura semántica
+- [x] Estructurar texto e imágenes
+- [ ] Crear varias páginas y enlazarlas (EN PROGRESO)
+
+**Estructura actual del proyecto:**
+```
+frontend/
+├── index.html (✅ Página principal - Centro Bertrand Russell)
+└── pages/
+    ├── acerca-de.html (✅ Creado - contiene servicios de terapia)
+    ├── clinica.html (⚠️ Creado pero vacío)
+    ├── cursos.html (⚠️ Creado pero vacío)
+    ├── investigación.html (⚠️ Creado pero vacío)
+    ├── congreso.html (⚠️ Creado pero vacío)
+    ├── contacto.html (⚠️ Creado pero vacío - necesita formulario)
+    ├── tcc-trastornos-ansiedad.html (⚠️ Creado pero vacío)
+    └── blog.html (⚠️ Creado pero vacío)
+```
+
+**Navbar implementado con 8 secciones:**
+- Acerca de Nosotros, La Clínica, Cursos, Investigación, Congreso, Contacto, TCC Trastornos Ansiedad, Blog
+
+**Conceptos HTML dominados:**
+- Estructura semántica: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
+- Diferencia entre `<section>` (temática) y `<article>` (independiente)
+- Jerarquía de encabezados (H1-H6)
+- Listas: `<ul>` (sin orden) y `<ol>` (ordenadas)
+- Enlaces: `<a href="">` con rutas relativas
+- Navegación multi-página (MPA)
+
+**PENDIENTE:**
+- [ ] Completar contenido de todas las páginas vacías
+- [ ] Añadir formulario en contacto.html
+- [ ] Probar navegación completa
+- [ ] Hacer commit y push del progreso
 
 ## CSS (diseño)
 - [ ] Entender cómo funciona CSS
@@ -136,9 +168,46 @@ Construir web de psicología con:
 ---
 
 # DIARIO DE APRENDIZAJE
-- [ ] Documentar qué aprendo cada día
-- [ ] Anotar errores y soluciones
-- [ ] Mejoras futuras del proyecto
+
+## Sesión 1 - Fundamentos y Git
+**Fecha:** 12 Marzo 2026
+
+**Aprendido:**
+- ✅ Arquitectura cliente-servidor
+- ✅ Diferencia frontend/backend/base de datos
+- ✅ Terminal: cd, mkdir, touch, ls
+- ✅ Git: init, add, commit, push, log, status
+- ✅ Git Branches: crear, cambiar, fusionar, resolver conflictos
+- ✅ GitHub: SSH, repositorio remoto
+- ✅ HTML semántico: header, nav, main, section, article, footer
+- ✅ Diferencia entre `<section>` y `<article>`
+- ✅ Navegación multi-página (MPA)
+
+**Conceptos clave dominados:**
+- HEAD = dónde estoy ahora
+- origin/master = último commit en GitHub
+- Fast-forward merge vs merge con conflicto
+- Estructura de árbol en HTML
+- Rutas relativas: `../` para subir nivel, `pages/` para entrar en carpeta
+
+**Estructura del proyecto creada:**
+- Centro Bertrand Russell (nombre real del centro)
+- 8 páginas: Inicio, Acerca de, Clínica, Cursos, Investigación, Congreso, Contacto, TCC, Blog
+- Navbar consistente en todas las páginas
+
+**Próximos pasos:**
+- Completar contenido de páginas vacías (clinica, cursos, investigación, congreso, tcc, blog)
+- Añadir formulario en contacto.html
+- Probar navegación completa
+- Hacer commit y push
+- Continuar con CSS para diseño moderno
+
+**Notas:**
+- Prefiero aprender con terminal (buena decisión)
+- Necesito práctica con branches (se aplicará en cada fase)
+- Me cuesta el diseño/maquetación (se trabajará en Fase 2 CSS)
+- Usar siempre branches para nuevas funcionalidades
+- Aprender lógica de programación
 
 ---
 
