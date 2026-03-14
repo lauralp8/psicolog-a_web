@@ -21,62 +21,77 @@ Aprender desarrollo web desde cero construyendo una web real informativa sobre p
 
 ---
 
-# FASE 1 — Primeros Pasos en Programación Web (EN PROGRESO)
+# FASE 1 — Primeros Pasos en Programación Web ✅ COMPLETADA
 ## HTML (estructura)
 - [x] Entender etiquetas básicas
 - [x] Crear primera página HTML con estructura semántica
 - [x] Estructurar texto e imágenes
-- [ ] Crear varias páginas y enlazarlas (EN PROGRESO)
+- [x] Crear varias páginas y enlazarlas
 
-**Estructura actual del proyecto:**
+**Estructura final del proyecto:**
 ```
 frontend/
 ├── index.html (✅ Página principal - Centro Bertrand Russell)
 └── pages/
-    ├── acerca-de.html (✅ Creado - contiene servicios de terapia)
-    ├── clinica.html (⚠️ Creado pero vacío)
-    ├── cursos.html (⚠️ Creado pero vacío)
-    ├── investigación.html (⚠️ Creado pero vacío)
-    ├── congreso.html (⚠️ Creado pero vacío)
-    ├── contacto.html (⚠️ Creado pero vacío - necesita formulario)
-    ├── tcc-trastornos-ansiedad.html (⚠️ Creado pero vacío)
-    └── blog.html (⚠️ Creado pero vacío)
+    ├── acerca-de.html (✅ Servicios de terapia)
+    ├── clinica.html (✅ Historia, equipo e instalaciones)
+    ├── cursos.html (✅ Formación TCC, mindfulness, talleres)
+    ├── investigación.html (✅ Líneas de investigación y publicaciones)
+    ├── congreso.html (✅ Congreso anual 2026)
+    ├── contacto.html (✅ Formulario funcional con validación)
+    ├── tcc-trastornos-ansiedad.html (✅ Información sobre TCC)
+    └── blog.html (✅ 3 artículos de ejemplo)
 ```
 
 **Navbar implementado con 8 secciones:**
-- Acerca de Nosotros, La Clínica, Cursos, Investigación, Congreso, Contacto, TCC Trastornos Ansiedad, Blog
+- Inicio, Acerca de, La Clínica, Cursos, Investigación, Congreso, Contacto, TCC, Blog
 
 **Conceptos HTML dominados:**
 - Estructura semántica: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
 - Diferencia entre `<section>` (temática) y `<article>` (independiente)
 - Jerarquía de encabezados (H1-H6)
 - Listas: `<ul>` (sin orden) y `<ol>` (ordenadas)
-- Enlaces: `<a href="">` con rutas relativas
+- Enlaces: `<a href="">` con rutas relativas (`../` para subir nivel)
+- Formularios: `<form>`, `<input>`, `<select>`, `<textarea>`, validación con `required`
 - Navegación multi-página (MPA)
 
-**PENDIENTE:**
-- [ ] Completar contenido de todas las páginas vacías
-- [ ] Añadir formulario en contacto.html
-- [ ] Probar navegación completa
-- [ ] Hacer commit y push del progreso
+## CSS (diseño) ✅ COMPLETADA (CSS puro)
+- [x] Entender cómo funciona CSS
+- [x] Colores, textos y fondos
+- [x] Espaciado y cajas (box model)
+- [x] Flexbox (alinear elementos)
+- [x] Hacer diseño responsive (media queries)
+- [ ] Tailwind CSS → SIGUIENTE PASO
 
-## CSS (diseño)
-- [ ] Entender cómo funciona CSS
-- [ ] Colores, textos y fondos
-- [ ] Espaciado y cajas
-- [ ] Flexbox (alinear elementos)
-- [ ] Hacer diseño responsive 
+**Conceptos CSS dominados:**
+- Box model: `margin` (externo), `padding` (interno), `border`
+- Selectores: etiqueta, `.clase`, `#id`, descendiente, hijo directo (`>`)
+- Especificidad: etiqueta < clase < ID < inline
+- Pseudo-clases: `:hover`, `:active`
+- Flexbox: `display: flex`, `justify-content`, `align-items`, `flex-direction`, `gap`
+- Transiciones: `transition: all 0.3s ease`
+- `border-radius` para bordes redondeados
+- Media queries: `@media (min-width: 768px)` - mobile first
+- Estilos globales vs clases específicas
+- Enlazar CSS: `<link rel="stylesheet" href="styles.css">` y `../styles.css` para subcarpetas
+
+**Estado actual del diseño:**
+- Navbar oscuro con logo a la izquierda y enlaces a la derecha
+- Hover con transición suave y background oscuro
+- `main` con max-width y centrado automático
+- Listas con padding-left en todo el main
+- Responsive básico con media queries para 768px y 1024px
 
 ---
 
-# FASE 2 — Diseño Web Moderno
+# FASE 2 — Diseño Web Moderno (EN PROGRESO)
 - [ ] Principios básicos de UI/UX
 - [ ] Paletas de colores modernas
 - [ ] Tipografías profesionales
 - [ ] Uso de iconos
 - [ ] Inspirarse en diseños reales
 - [ ] Usar librerías de estilos modernas:
-  - [ ] Tailwind CSS
+  - [ ] Tailwind CSS ← SIGUIENTE PASO (navbar hamburguesa + componentes)
 
 ---
 
@@ -202,12 +217,42 @@ Construir web de psicología con:
 - Hacer commit y push
 - Continuar con CSS para diseño moderno
 
+## Sesión 2 - CSS y Diseño
+**Fecha:** 14 Marzo 2026
+
+**Aprendido:**
+- ✅ Box model (margin, padding, border, box-sizing)
+- ✅ Selectores CSS (etiqueta, clase, ID, descendiente, hijo directo)
+- ✅ Especificidad CSS
+- ✅ Flexbox completo (justify-content, align-items, flex-direction, gap)
+- ✅ Pseudo-clases (:hover) y transiciones
+- ✅ Media queries y diseño responsive (mobile first)
+- ✅ Enlazar CSS con HTML (rutas relativas)
+- ✅ DevTools de Chrome para simular móvil
+- ✅ Estilos globales vs clases específicas
+
+**Conceptos clave dominados:**
+- `justify-content` = eje principal del flex
+- `align-items` = eje cruzado del flex
+- `space-between` = espacio entre elementos (sin extremos)
+- `space-around` = espacio con extremos (mitad del gap)
+- Mobile first: estilos base para móvil, media queries para pantallas grandes
+- `@media (min-width: Xpx)` = aplica estilos a partir de X píxeles
+
+**Estado actual del proyecto:**
+- Navbar funcional con logo izquierda y enlaces derecha
+- Hover con transición suave
+- Responsive básico implementado
+- CSS global en `frontend/styles.css` enlazado en todas las páginas
+
+**Próximos pasos:**
+- Tailwind CSS (navbar hamburguesa + componentes profesionales)
+- Flowbite para componentes listos
+
 **Notas:**
-- Prefiero aprender con terminal (buena decisión)
-- Necesito práctica con branches (se aplicará en cada fase)
-- Me cuesta el diseño/maquetación (se trabajará en Fase 2 CSS)
-- Usar siempre branches para nuevas funcionalidades
-- Aprender lógica de programación
+- Le gusta usar librerías para ahorrar tiempo en diseño (muy profesional)
+- Prefiere entender conceptos antes de usar herramientas
+- Rama actual: `feature/css-diseño`
 
 ---
 
