@@ -20,6 +20,15 @@ header {
 }
 
 /* Estilos del nav */
+
+nav {
+    background-color: #2c3e50;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -29,10 +38,20 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     color: #3498db;
+    background-color: #1a252f;
+}
+
+nav .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
 }
 
 /* Estilos del main */
@@ -49,4 +68,22 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+main ul{
+    padding-left: 2rem;
+}
+
+/* TABLET: A partir de 768px */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* DESKTOP: A partir de 1024px */
+@media (min-width: 1024px) {
+    nav ul {
+        gap: 2rem;
+    }
 }
