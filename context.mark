@@ -1,5 +1,45 @@
 # Proyecto Web Informativa de Psicología — Roadmap de Aprendizaje
 
+Contexto Personal de Aprendizaje (IMPORTANTE)
+
+Estoy muy motivada con el proyecto, pero tengo una dificultad clara que afecta a mi progreso:
+ - Me desmotivo cuando algo requiere demasiado esfuerzo mental prolongado.
+ - Cuando el progreso no es visible rápidamente, siento frustración y me cuesta mantener la paciencia.
+ - Tiendo a quedarme en la superficie en vez de experimentar más por miedo a hacerlo mal o perder mucho tiempo.
+ - Me cuesta disfrutar la fase de prueba/error aunque sé que es necesaria para aprender.
+ - Cuando una tarea es muy grande o abstracta, mi cerebro la percibe como pesada y la evito.
+Esto NO es falta de interés ni de disciplina porque, cuando veo avances claros y resultados visibles, trabajo con mucha constancia.
+
+He descubierto que aprendo y mantengo la motivación cuando:
+✅ Trabajo por componentes visuales pequeños y terminados en vez de fases largas y abstractas
+✅ Veo mejoras visibles en la web en cada sesión
+✅ Tengo objetivos concretos y limitados para cada sesión
+✅ Siento que construyo piezas reales de una web profesional
+✅ El aprendizaje se siente práctico y aplicado, no solo teórico
+
+Método de trabajo que quiero seguir desde ahora:
+- En lugar de avanzar por fases generales, quiero construir la web como lo haría un desarrollador profesional: por componentes UI terminados.
+- Ir aprendiendo la teoría que falta por componentes.
+  Ejemplos de componentes: Hero section moderna, tarjetas de servicios, sección de testimonios, sección “Sobre la clínica”, galería de instalaciones, CTA de contacto, footer profesional, navbar responsive moderna
+  Cada componente debe verse profesional, estar terminado visualmente y aportar mejora estética real a la web
+
+Cómo KIRO puedes ayudarme mejor: Quiero que actúes como:
+→ Mi mentora técnica
+→ Dividiendo el trabajo en piezas pequeñas
+→ Priorizando mejoras visuales visibles
+→ Evitando sobrecarga teórica innecesaria
+→ Ayudándome a experimentar sin miedo a equivocarme
+
+Cuando una tarea sea grande, ayúdame a dividirla.
+Cuando me bloquee por perfeccionismo, recuérdame que: “Primero versión funcional, luego versión bonita”.
+
+Objetivo psicológico además del técnico: No solo quiero aprender desarrollo web, quiero desarrollar:
+- Paciencia ante problemas complejos
+- Tolerancia a la frustración técnica
+- Capacidad de terminar cosas difíciles
+- Confianza profesional real y en mi misma
+- Construir esta web es mi vehículo para convertirme en una profesional capaz.
+
 ## Objetivo
 Aprender desarrollo web desde cero construyendo una web real informativa sobre psicología, aplicando buenas prácticas profesionales, diseño moderno, seguridad, testing y despliegue.
 
@@ -61,7 +101,7 @@ frontend/
 - [x] Espaciado y cajas (box model)
 - [x] Flexbox (alinear elementos)
 - [x] Hacer diseño responsive (media queries)
-- [ ] Tailwind CSS → SIGUIENTE PASO
+- [ ] Mejorar diseño visual con CSS puro (componentes profesionales) ← SIGUIENTE PASO / AQUÍ ESTAMOS
 
 **Conceptos CSS dominados:**
 - Box model: `margin` (externo), `padding` (interno), `border`
@@ -84,14 +124,26 @@ frontend/
 
 ---
 
-# FASE 2 — Diseño Web Moderno (EN PROGRESO)
+# FASE 2 — Diseño Web Moderno (EN PROGRESO) 
 - [ ] Principios básicos de UI/UX
 - [ ] Paletas de colores modernas
-- [ ] Tipografías profesionales
-- [ ] Uso de iconos
+- [ ] Tipografías profesionales (Google Fonts)
+- [ ] Uso de iconos (Font Awesome u otra librería ligera)
 - [ ] Inspirarse en diseños reales
-- [ ] Usar librerías de estilos modernas:
-  - [ ] Tailwind CSS ← SIGUIENTE PASO (navbar hamburguesa + componentes)
+- [ ] Organizar CSS por componentes (múltiples hojas de CSS, una por sección/componente)
+- [ ] Construir componentes visuales profesionales en CSS puro:
+  - [ ] Navbar moderna con menú hamburguesa
+  - [ ] Hero section
+  - [ ] Tarjetas de servicios
+  - [ ] Sección testimonios
+  - [ ] Sección "Sobre la clínica"
+  - [ ] CTA de contacto
+  - [ ] Footer profesional
+
+**Decisión de arquitectura CSS:**
+- CSS puro organizado por componentes (sin Tailwind por ahora)
+- Tailwind se aprenderá al final del proyecto, una vez consolidados los conceptos CSS
+- Cada componente tendrá su propia hoja de estilos para mantener el código limpio y manejable
 
 ---
 
@@ -246,8 +298,9 @@ Construir web de psicología con:
 - CSS global en `frontend/styles.css` enlazado en todas las páginas
 
 **Próximos pasos:**
-- Tailwind CSS (navbar hamburguesa + componentes profesionales)
-- Flowbite para componentes listos
+- CSS puro organizado por componentes (sin Tailwind)
+- Mejorar diseño visual componente a componente
+- Tailwind al final del proyecto como aprendizaje adicional
 
 **Notas:**
 - Le gusta usar librerías para ahorrar tiempo en diseño (muy profesional)

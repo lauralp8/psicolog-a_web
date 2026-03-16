@@ -1,25 +1,26 @@
-/* Reset básico */
+/* Reset básico 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos del body */
+ Estilos del body 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    font-family: 'Bitcount Prop Double Ink', sans-serif;
 }
 
-/* Estilos del header */
+Estilos del header 
 header {
     background-color: #2c3e50;
     color: white;
     padding: 1rem;
 }
 
-/* Estilos del nav */
+Estilos del nav
 
 nav {
     background-color: #2c3e50;
@@ -54,14 +55,14 @@ nav .logo {
     color: white;
 }
 
-/* Estilos del main */
+/* Estilos del main 
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Estilos del footer */
+/* Estilos del footer 
 footer {
     background-color: #34495e;
     color: white;
@@ -74,16 +75,18 @@ main ul{
     padding-left: 2rem;
 }
 
-/* TABLET: A partir de 768px */
+/* TABLET: A partir de 768px 
 @media (min-width: 768px) {
     nav ul {
         flex-direction: row;
     }
 }
 
-/* DESKTOP: A partir de 1024px */
+/* DESKTOP: A partir de 1024px 
 @media (min-width: 1024px) {
     nav ul {
         gap: 2rem;
     }
 }
+
+*/
