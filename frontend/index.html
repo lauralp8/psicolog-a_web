@@ -3,38 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Web Psicología</title>
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        
-        <nav>
-            <span>Centro Bertrand Russel</span>
-            <ul>
-                <li><a href="pages/acerca-de.html">Acerca de Nosotros</a></li>
-                <li><a href="pages/clinica.html">La Clínica</a></li>
-                <li><a href="pages/cursos.html">Cursos</a></li>
-                <li><a href="pages/investigación.html">Investigación</a></li>
-                <li><a href="pages/congreso.html">Congreso</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/tcc-trastornos-ansiedad.html">TCC Trastornos Ansiedad</a></li>
-                <li><a href="pages/blog.html">Blog</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar__inner">
+                <img src="support/logo-centro.png" alt="logotipo del centro" href="index.html" class="navbar__logo">
+                <!--<a href="index.html" class="logo">Centro Bertrand Russell</a>-->
+                <ul class="navbar__links">
+                    <li><a href="pages/clinica.html">Clínica</a></li>
+                    <li><a href="pages/equipo.html">Equipo</a></li>
+                    <li><a href="pages/cursos.html">Cursos</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="..">Recursos</a></li>
+                    <li><a href="pages/contacto.html" class="navbar__cta">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Centro de Psicología Bertrand Russell</h1>
-            <h2>Terapia | Formación | Investigación</h2>
-            <p>En 1979 Francisco Bas Ramallo y Verania Andrés Navia, Doctores en Psicología y Especialistas en Psicología Clínica, fundan este Centro que, en la actualidad, cumple su 43 aniversario, introduciendo en España por primera vez la Terapia Cognitivo Conductual.</p>
+        <section class="hero">
+            <video class="hero__video" autoplay muted loop playsinline>
+                <source src="support/hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <span class="hero__tag">Desde 1979</span>
+                <h1 class="hero__title">Centro de Psicología<br>Bertrand Russell</h1>
+                <p class="hero__subtitle">Terapia · Formación · Investigación</p>
+                <p class="hero__description">Francisco Bas Ramallo y Verania Andrés Navia, doctores en Psicología y especialistas en Psicología Clínica, fundan este centro pionero en la introducción de la Terapia Cognitivo Conductual en España desde hace 43 años.</p>
+                <a href="pages/clinica.html" class="hero__btn">Descubre más</a>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span></span>
+            </div>
         </section>
 
     </main>
     <footer>
         <p>&copy; 2026 Psicología Profesional. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('navbar--scrolled', window.scrollY > 60);
+        });
+    </script>
 </body>
 </html>
 
