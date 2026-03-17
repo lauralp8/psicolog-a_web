@@ -1,0 +1,86 @@
+.team {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-md);
+    max-width: 1200px; /* El contenido nunca será más ancho que 1200px (para pantallas grandes)*/
+    margin: 0 auto; /* esto solo funciona cuando tiene un ancho definido, y centra el contenido horizontalmente*/
+    text-align: center;
+    gap: var(--space-xs);
+}
+
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-xs) var(--space-xxs);
+}
+
+.team h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: 300;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+    padding-bottom: var(--space-md);
+}
+
+.team__member:first-child .team__photo,
+.team__member:last-child .team__photo {
+    aspect-ratio: 3 / 4;
+    border-radius: 10% 10% 2% 2% !important;
+
+}
+
+.team__member{
+    padding: var(--space-sm);
+}
+
+.team__name {
+    font-family: var(--font-heading);
+    font-size: var(--text-md);
+    font-weight: 400;
+    color: var(--color-accent);
+}
+
+.team__role {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 300;
+    margin-top: var(--space-xs);
+}
+
+.team__photo {
+    width: 100%;
+    aspect-ratio: 3 / 3.5;
+    object-fit: cover;
+    border-radius: 25% 25% 2% 2%; 
+    filter: grayscale(100%);
+    transition: filter 0s ease, transform 0s ease, box-shadow 0s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.team__photo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+.team__btn {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    background: var(--color-accent);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    padding: 0.5rem 1.4rem ;
+    border-radius: 100px;
+}
+
+.team__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(213, 139, 51, 0.45);
+    background: var(--color-accent-dark);
+}
