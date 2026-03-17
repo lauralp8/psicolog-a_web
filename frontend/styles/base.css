@@ -2,21 +2,12 @@
 BASE.CSS — Reset, variables y estilos globales
 ============================================ */
 
-/* --- Variables CSS (paleta y tipografía) --- */
 :root {
-    /* Colores principales */
-    
-    --color-primary-light: #EACBA0;  
-    --color-hover:         #D58B33;  
-    --color-bg-transparency: rgba(255,255,255,0.85);
-    --color-bg-hero: #FBF9F6;
-    /* Buscar colores complementarios para las diferentes secciones */
-
-    /* Neutros */
-    --color-bg:            #F6F3EF;  /* fondo general cálido y elegante */
-    
-    /* Texto */
-    --color-text:          #1A1A1A;  /* marrón oscuro para texto principal */
+    /* Colores */
+    --color-accent:      #D58B33;   /* dorado principal */
+    --color-accent-dark: #c47d2a;   /* dorado oscuro (hover/pressed) */
+    --color-text:        #1A1A1A;   /* texto principal */
+    --color-bg:          #F6F3EF;   /* fondo general cálido */
 
     /* Espaciados */
     --space-xs:   0.25rem;
@@ -26,10 +17,8 @@ BASE.CSS — Reset, variables y estilos globales
     --space-xl:   4rem;
 
     /* Tipografía */
-    --font-base:    'Inter', sans-serif;
-    --font-heading: 'Playfair Display', serif;
-    --link-a-navbar: "Poppins", sans-serif;
-
+    --font-heading: 'Fraunces', serif;
+    --font-body:    'Inter', sans-serif;
 
     /* Bordes */
     --radius-sm:  4px;
@@ -47,11 +36,7 @@ BASE.CSS — Reset, variables y estilos globales
     --text-lg:   1.25rem;   /* 20px */
     --text-xl:   1.5rem;    /* 24px */
     --text-2xl:  2rem;      /* 32px */
-    --text-3xl:  3rem;      /* 48px */
-
-  
-
-    
+    --text-3xl:  3rem;      /* 48px */   
 }
 
 /* --- Reset --- */

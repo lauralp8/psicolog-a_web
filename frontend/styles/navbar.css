@@ -2,6 +2,7 @@
     NAVBAR.CSS — Barra de navegación moderna
 =============================================== */
 
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -10,16 +11,6 @@
     z-index: 1000;
     padding: 1.25rem 0;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Estado al hacer scroll — glassmorphism */
-.navbar--scrolled {
-    padding: 0.6rem 0;
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
 .navbar__inner {
@@ -31,20 +22,7 @@
     align-items: center;
 }
 
-.navbar__logo {
-    width: 3rem;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.navbar__logo:hover {
-    transform: scale(1.05);
-}
-
-.navbar--scrolled .navbar__logo {
-    width: 2.5rem;
-}
-
+/* LINKS A */
 .navbar__links {
     display: flex;
     gap: 0.25rem;
@@ -72,7 +50,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background: var(--color-hover);
+    background: var(--color-accent);
     border-radius: 2px;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     transform: translateX(-50%);
@@ -86,16 +64,18 @@
     color: #fff;
 }
 
-/* Al hacer scroll, los links cambian a oscuro */
-.navbar--scrolled .navbar__links a {
-    color: var(--color-text);
+/* LOGO */
+.navbar__logo {
+    width: 3rem;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.navbar--scrolled .navbar__links a:hover {
-    color: var(--color-hover);
+.navbar__logo:hover {
+    transform: scale(1.05);
 }
 
-/* Botón CTA de Contacto */
+/* BOTÓN CONTACTO */
 .navbar__cta {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -111,25 +91,50 @@
 }
 
 .navbar__cta:hover {
-    background: var(--color-hover) !important;
+    background: var(--color-accent) !important;
     color: #fff !important;
-    border-color: var(--color-hover) !important;
+    border-color: var(--color-accent) !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 16px rgba(213, 139, 51, 0.3);
 }
 
+/* DISEÑO SCROLL */
+/* Estado al hacer scroll — glassmorphism */
+.navbar--scrolled {
+    padding: 0.6rem 0;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* Al hacer scroll, los links cambian a oscuro */
+.navbar--scrolled .navbar__links a {
+    color: var(--color-text);
+}
+
+.navbar--scrolled .navbar__links a:hover {
+    color: var(--color-accent);
+}
+
+.navbar--scrolled .navbar__logo {
+    width: 2.5rem;
+}
+
 .navbar--scrolled .navbar__cta {
-    background: var(--color-hover);
+    background: var(--color-accent);
     color: #fff !important;
-    border-color: var(--color-hover);
+    border-color: var(--color-accent);
 }
 
 .navbar--scrolled .navbar__cta:hover {
-    background: #c47d2a;
-    border-color: #c47d2a;
+    background: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
     box-shadow: 0 4px 20px rgba(213, 139, 51, 0.35);
 }
 
+/* DISEÑO RESPONSIVE */
 /* MOBILE */
 @media (max-width: 768px) {
     .navbar__links {
