@@ -3,18 +3,44 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--space-md);
-    max-width: 1200px; /* El contenido nunca será más ancho que 1200px (para pantallas grandes)*/
     margin: 0 auto; /* esto solo funciona cuando tiene un ancho definido, y centra el contenido horizontalmente*/
     text-align: center;
     gap: var(--space-xs);
+    align-items: center;
+    height: 1px;
 }
 
 .team__grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: var(--space-xs) var(--space-xxs);
+    padding: var(--space-md);
+    padding-bottom: var(--space-xxs);
+    gap: var(--space-lg) var(--space-lg);
+    max-width: 1200px;
+    position: relative;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--color-accent);
 }
+
+.team__grid::before,
+.team__grid::after {
+    content: '';
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 1px;
+    background: var(--color-accent);
+    opacity: 0.9;
+}
+
+.team__grid::before {
+    left: -2rem;
+}
+
+.team__grid::after {
+    right: -2rem;
+}
+
 
 .team h2 {
     font-family: var(--font-heading);
@@ -22,18 +48,65 @@
     font-weight: 300;
     color: var(--color-text);
     letter-spacing: -0.02em;
-    padding-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    width: 100%;
+    max-width: 1200px;
 }
 
-.team__member:first-child .team__photo,
-.team__member:last-child .team__photo {
-    aspect-ratio: 3 / 4;
-    border-radius: 10% 10% 2% 2% !important;
+.team h2::before,
+.team h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--color-accent);
+    opacity: 0.90;
+    max-width: 200px;
+}
 
+
+.team h3 {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg)
 }
 
 .team__member{
-    padding: var(--space-sm);
+    background: #fff;
+    padding: var(--space-md) var(--space-md) var(--space-lg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.team__member:hover {
+    transform: rotate(-1deg) translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+.team__member:nth-child(2),
+.team__member:nth-child(4),
+.team__member:nth-child(6),
+.team__member:nth-child(8),
+.team__member:nth-child(10) {
+    transform: translateY(-10px);
+    rotate: 1deg;
+}
+
+.team__member:nth-child(1),
+.team__member:nth-child(3),
+.team__member:nth-child(5),
+.team__member:nth-child(7),
+.team__member:nth-child(9) {
+    rotate: -3deg;
 }
 
 .team__name {
@@ -41,10 +114,11 @@
     font-size: var(--text-md);
     font-weight: 400;
     color: var(--color-accent);
+    margin-top: var(--space-sm);
 }
 
 .team__role {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: var(--text-sm);
     color: var(--color-text);
     text-align: center;
@@ -56,7 +130,6 @@
     width: 100%;
     aspect-ratio: 3 / 3.5;
     object-fit: cover;
-    border-radius: 25% 25% 2% 2%; 
     filter: grayscale(100%);
     transition: filter 0s ease, transform 0s ease, box-shadow 0s ease;
     box-shadow: var(--shadow-md);
@@ -71,12 +144,14 @@
     display: inline-block;
     font-family: var(--font-body);
     font-size: var(--text-md);
-    background: var(--color-accent);
+    background: linear-gradient(135deg, #D58B33, #C2761F);
+    box-shadow: 0 6px 15px rgba(135deg, #D58B33, #C2761F);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     text-decoration: none;
     padding: 0.5rem 1.4rem ;
     border-radius: 100px;
+    margin-top: 1rem;
 }
 
 .team__btn:hover {

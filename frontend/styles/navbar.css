@@ -77,8 +77,8 @@
 
 /* BOTÓN CONTACTO */
 .navbar__cta {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 0.5rem 1.4rem !important;
@@ -102,11 +102,9 @@
 /* Estado al hacer scroll — glassmorphism */
 .navbar--scrolled {
     padding: 0.6rem 0;
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    background: rgba(246, 237, 225, 0.55);
+    border-bottom: 1px solid rgba(213, 139, 51, 0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
 }
 
 /* Al hacer scroll, los links cambian a oscuro */
@@ -119,7 +117,7 @@
 }
 
 .navbar--scrolled .navbar__logo {
-    width: 2.5rem;
+    width: 3.5rem;
 }
 
 .navbar--scrolled .navbar__cta {
