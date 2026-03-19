@@ -6,6 +6,7 @@ BASE.CSS — Reset, variables y estilos globales
     /* Colores */
     --color-accent:      #D58B33;   /* dorado principal */
     --color-accent-dark: #c47d2a;   /* dorado oscuro (hover/pressed) */
+    --color-accent-light: #fdf8f288;   /* dorado claro (hover/pressed) */
     --color-light:       #c7c8ca; /* fondo claro para secciones */
     --color-text:        #2A211B;   /* texto principal */
     --color-bg:          #F6F3EF;   /* fondo general cálido */
