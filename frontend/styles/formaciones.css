@@ -148,20 +148,9 @@
     padding-bottom: var(--space-xl);
     background: transparent;
     border-top: 2px solid var(--color-accent);
+    border-bottom: 1px solid rgba(213, 139, 51, 0.25);
     border-radius: 0;
     transition: border-color 0.4s ease;
-    position: relative;
-}
-
-/* Línea inferior sutil */
-.formaciones__grid .formacion::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: var(--space-lg);
-    right: var(--space-lg);
-    height: 1px;
-    background: rgba(0, 0, 0, 0.06);
 }
 
 .formaciones__grid .formacion:hover {
@@ -203,7 +192,7 @@
 }
 
 .etiqueta_finalizado {
-    background: rgba(0, 0, 0, 0.273);
+    background: rgba(0, 0, 0, 0.15);
     color: var(--color-text);
     align-self: start;
 }
@@ -226,7 +215,7 @@
     font-family: var(--font-heading);
     font-size: var(--text-lg);
     font-weight: 400;
-    color: var(--color-text);
+    color: var(--color-accent);
     text-align: start;
     line-height: 1.35;
     margin-top: var(--space-md);
